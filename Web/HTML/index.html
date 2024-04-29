@@ -12,9 +12,56 @@
                 color: red;
 
             }
+            * {
+                margin: 0;
+                padding: 0;
+            }
+
+            li {
+                display: inline;
+            }
+
+            hr {
+                width: 95%;
+                margin: auto;
+            }
         </style>
     </head>
     <body>
+        <header>
+            <h1>Bini_PH</h1>
+            <nav>
+                <ul>
+                    <li><a href="https://www.instagram.com/bini_ph/?hl=en">About</a></li>
+                    <li><a href="https://www.ticketnet.com.ph/event-detail/BINIverse-The-First-Solo-Concert#Tickets">Get Ticket to Biniverse!</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <h2> This is a Practice HTML with BINI theme</h2>
+            <br/><hr style="width: 95%;"><br/>
+            <section>
+                <h3>Why?</h3>
+                <article>
+                    <h4>To relearn HTML</h4>
+                    <p>I need to review my html.</p>
+                </article>
+                <br/><hr style="width: 95%;"><br/>
+            </section>
+            <section>
+                <h3>What's with the theme?</h3>
+                <article>
+                    <h4>I love BINI</h4>
+                    <p>Stan Bini. I love Bini. Jhoanna is my bias.
+                        Best leader Master Jho.</p>
+                    <figure>
+                        <img width="150px" src="https://media.tenor.com/1JS2xVBuvCkAAAAe/bini-jhoanna-starhuntacademy.png" alt="Bini_Jhoanna">
+                        <figcaption>Bini_Jhoanna uwu</figcaption>
+                    </figure>
+                    <br/><hr style="width: 95%;"><br/>
+                </article>
+            </section>
+        </main>
         <h2>Hello world!</h2>
         <p class="paragraph text">This <b>Text</b> is bold</p>
         <p class="paragraph" >This one is <i>Italicized</i></p>
@@ -38,10 +85,40 @@
         </ol>
         
         <a href="https://www.youtube.com/@BINIPH" target="_blank">stan BINI</a><br>
+        <form action="" method="">
+            <!--for="some id" is used in label to associate it to the input-->
+            <label for="username">Username:</label> <input type="text" id="username" required><br>
+            <!--Implicit Label-->
+            <label>Email: <input type="email" required><br></label>
+            Password: <input type="password" minlength="4" maxlength="10" required><br>
+            How many members are there in BINI: <input type="number" step="2" min=0 max=10 required><br>
+            <input type="checkbox">Stan BINI? <br>
+            <input type="checkbox">Have Bias in BINI? <br>
+            
+            <br>PICK BIAS:<br>
+            <input type="radio" name="bini">Aiah<br>
+            <input type="radio" name="bini">Colet<br>
+            <input type="radio" name="bini">Maloi<br>
+            <input type="radio" name="bini">Gwen<br>
+            <input type="radio" name="bini">Mikha<br>
+            <input type="radio" name="bini">Stacey<br>
+            <input type="radio" name="bini">Jhoanna<br>
+            <input type="radio" name="bini">Sheena<br><br>
+
+            <textarea id="data_entry" rows="7" cols="42" placeholder="Message to Bini"></textarea><br><br>
+            Submit: <input type="submit" value="IPASA">
+        </form>
         <img name="BINI PIC" alt="nation's girl group" width="250" src="https://i.scdn.co/image/ab67616100005174f44bbd4b3e932c656f47d6a9"><br>
         <!-- Anchors are cool like this comment-->
         <a id="email" href="mailto: rednuerocs@gmail.com">EMAIL</a>
         <a value="89" href="tel:8-7000">Jollibee</a>
         <a href="sms:320-250-HTML">SMS</a>
     </body>
+    <footer>
+        <h4>Bini_PH</h4>
+        <ul>
+            <li>Archive</li>
+            <li>Links</li>
+        </ul>
+    </footer>
 </html>
