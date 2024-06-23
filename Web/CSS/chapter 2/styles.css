@@ -1,0 +1,25 @@
+body {
+    background-image: url(https://images8.alphacoders.com/134/1349392.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#invite-wrapper {
+    width: 70%;
+    padding: 20px;
+    background-color: #ddaaff;
+    color: rgb(100, 50, 50);
+}
+
+h1 {
+    font-family: Apple Chancery, cursive;
+    text-align: center;
+}
+
+#invite-text {
+    width: 80%;
+}
+
+#itinerary {
+    text-align: center;
+}
