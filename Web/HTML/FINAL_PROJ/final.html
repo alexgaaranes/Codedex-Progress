@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Alex's Kitchen</title>
+        <!-- Style -->
+        <style>
+            body {
+                font-family:cursive;
+                background-color: lightblue;
+            }
+
+            #header-img {
+                border-radius: 50%;
+                width: 10%;
+            }
+
+            #adobo, #sinigang, #sisig {
+                width: 10%;
+            }
+
+            #done{
+                color: green;
+            }
+
+        </style>
+    </head>
+    <body>
+        <header>
+            <img src="logo.png" id="header-img">
+            <h1>Alex's Kitchen</h1>
+            <nav>
+                <a href="#menu">Menu</a><br>
+                <a href="#order-form">Order Form</a>
+            </nav>
+        </header>
+        <hr>
+        <!--Menu-->
+        <fieldset>
+            <legend><h2>Menu</h2></legend>
+            <section id="menu">
+                <!--Adobo-->
+                <ol>
+                    <li>
+                        <article>
+                            <img src="adobo.jpg" id="adobo" alt="adobo dish">
+                            <h3>Pork Adobo</h3>
+                            <p><b>3-4 servings</b></p>
+                            <p><i>A Filipino pork dish where pork slices are cooked with soy sauce, vinegar, and garlic. The pork used are marinated to make a stronger flavor, the umami, impact.</i></p>
+                        </article>
+                    </li>
+                    <br>
+                    <li>
+                        <!--Sinigang-->
+                        <article>
+                            <img src="sinigang.jpg" id="sinigang" alt="sinigang dish">
+                            <h3>Pork Sinigang</h3>
+                            <p><b>3-4 servings</b></p>
+                            <p><i>A sour soup dish from the Philippines which includes pork and vegetables. The soup is clear but full of flavor and sourness that came from the tamarind fruit</i></p>
+                        </article>
+                    </li>
+                    <br>
+                    <li>
+                        <!--Sisig-->
+                        <article>
+                            <img src="sisig.jpg" id="sisig" alt="sisig dish">
+                            <h3>Pork Sisig</h3>
+                            <p><b>2-3 servings</b></p>
+                            <p><i>The dish consists of chopped pork mainly from pig's face cooked until crispy. It is served with different condiments that compliments the texture and taste. Good with beer.</i></p>
+                        </article>
+                    </li>
+                </ol>
+            </section>
+            <!--I just noticed that all the dishes are made of pork making the food not for everyone :(. Most PH dishes are pork based.-->
+        </fieldset>
+        <!--Order Form-->
+        <fieldset>
+            <legend><h2>Place Your Order</h2></legend>
+            <section id="order-form">
+                <form> 
+                    <!--Main Dish-->
+                    <div class="main-dish">
+                        <h4>Amount of Order: </h4>
+                        <label for="adobo-input">Pork Adobo (₱500)</label><br>
+                        <input type="number" id="adobo-input" min="0" value="0">
+                        <br><br>
+                        <label for="sinigang-input">Pork Sinigang (₱600)</label><br>
+                        <input type="number" id="sinigang-input" min="0" value="0">
+                        <br><br>
+                        <label for="sisig-input">Pork Sisig (₱300)</label><br>
+                        <input type="number" id="sisig-input" min="0" value="0">
+                        <br><br>
+                    </div>
+
+                    <!--Sidedish-->
+                    <div class="sidedish">
+                        <h4>Sides</h4>
+                        <input type="checkbox" id="chicharon"><label for="chicharon">Chicharon</label><br>
+                        <input type="checkbox" id="atchara"><label for="atchara">Atchara</label><br>
+                        <input type="checkbox" id="salad"><label for="salad">Cucumber Salad</label><br>
+                        <br>
+                    </div>
+
+                    <!--Addons-->
+                    <div class="addons">
+                        <h4>Addons</h4>
+                        <input type="checkbox" id="egg"><label for="egg">Extra Egg</label><br>
+                        <input type="checkbox" id="juice"><label for="juice">Juice (6 Cups)</label><br>
+                        <input type="checkbox" id="beer"><label for="beer">Beer (1 case)</label><br>
+                        <br>
+                        <textarea cols="50" rows="10" placeholder="Enter Special Request"></textarea><br>
+                        <br>
+                    </div>
+
+                    <!--MOP-->
+                    <div class="mop">
+                        <h4>Mode of Payment</h4>
+                        <input type="radio" name="mop" id="cod" checked><label for="cod">Cash on Delivery</label><br>
+                        <input type="radio" name="mop" id="online"><label for="online">Online Payment</label><br>
+                        <br>
+                    </div>
+                    
+                    <label id="done"><h4>Done?</h4></label><input type="submit" id="place-order" value="Go to Checkout">
+                </form>
+            </section>
+        </fieldset>
+    </body>
+    <hr>
+    <footer>
+        <p>Made with love by <b>alexgaaranes</b></p><br>
+        <p>Stock photos from: <a href="https://www.bigstockphoto.com/" target="_blank">BIGSTOCK</a></p>
+        <p>Food description from: <a href="https://panlasangpinoy.com/" target="_blank">Panlasang Pinoy</a></p>
+    </footer>
+</html>
