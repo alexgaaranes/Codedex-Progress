@@ -1,5 +1,7 @@
 let lightIndex = 0;
 
+console.log(document);
+
 function changeLight() {
   const redLight = document.getElementById("red");
   const yellowLight = document.getElementById("yellow");
