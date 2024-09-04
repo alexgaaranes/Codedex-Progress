@@ -1,11 +1,4 @@
 {
     "sqltools.useNodeRuntime": true,
-    "sqltools.connections": [
-        {
-            "previewLimit": 50,
-            "driver": "SQLite",
-            "name": "SQLite",
-            "database": "${workspaceFolder:SQL}/pride_index.csv"
-        }
-    ]
+    "sqltools.connections": []
 }
